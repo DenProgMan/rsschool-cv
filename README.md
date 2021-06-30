@@ -1,2 +1,1 @@
-# rsschool-cv
-Solution of the task Markdown &amp; Git
+https://DenProgMan.github.io/rsschool-cv/cv
