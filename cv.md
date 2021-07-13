@@ -8,7 +8,7 @@ Garkin Denis
 
 ---
 ## About me:
-Hi there, I’m Denis and I’m from Penza, it’s 650km from Moscow.
+Hi there, I’m Denis and I’m from Penza, it’s 650km from Moscow. Pavel Volya from Penza you know.
 
 I love frontend technologies and _I want to improve my JavaScript and HTML/CSS skills_.
 
@@ -34,6 +34,8 @@ Now I’m working in a manufacturing company as a Web-developer. I'm creating an
 -	React/Redux;
 -	Node.js;
 -	Webpack;
+-	PHP (Slim, Zend/Laminas Framework);
+-	MySQL;
 
 _But my knowledge is a little bit slack that why **I want to pass JS/FE course**._
 
