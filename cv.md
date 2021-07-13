@@ -40,6 +40,20 @@ Now I’m working in a manufacturing company as a Web-developer. I'm creating an
 _But my knowledge is a little bit slack that why **I want to pass JS/FE course**._
 
 ---
+## Code example:
+```javascript
+const user = {
+    id: 1,
+    name: 'Denis Garkin',
+    password: 'some_password_here',
+}
+
+const removeProperty = prop => ({ [prop]: toDelete, ...other }) => other;
+
+console.log(removProprty('password')(user));
+```
+
+---
 ## Work experience:
 I’ve been working as a web developer since March 2019.
 
