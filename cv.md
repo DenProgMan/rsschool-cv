@@ -50,7 +50,7 @@ const user = {
 
 const removeProperty = prop => ({ [prop]: toDelete, ...other }) => other;
 
-console.log(removProprty('password')(user));
+console.log(removeProperty('password')(user));
 ```
 
 ---
