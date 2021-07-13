@@ -1,4 +1,4 @@
-Garkin Denis
+Denis Garkin
 ============
 
 **Discord**: Denis Garkin (@DenProgMan)\
