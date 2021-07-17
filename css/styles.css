@@ -133,6 +133,21 @@ dt {
 
 /* === Right column === */
 
+/* === header === */
+header ul {
+    list-style: none;
+    padding: 0;
+}
+header .dt {
+    font-weight: bold;
+}
+header ul p {
+    margin: 0;
+}
+header ul .dd {
+    padding-left: 40px;
+}
+/* === / header === */
 
 /* === Footer === */
 footer {
