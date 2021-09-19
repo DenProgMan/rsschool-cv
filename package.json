@@ -1,0 +1,23 @@
+{
+    "name": "rsschool-cv-html",
+    "version": "0.0.1",
+    "description": "Educational project CV from RSSchool",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "DenProgMan",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-sass": "^5.0.0",
+        "htmlhint": "^0.15.1",
+        "sass": "^1.41.0",
+        "stylelint": "^13.13.1",
+        "stylelint-config-rational-order": "^0.1.2",
+        "stylelint-config-standard": "^22.0.0",
+        "stylelint-order": "^4.1.0",
+        "stylelint-scss": "^3.21.0"
+    }
+}

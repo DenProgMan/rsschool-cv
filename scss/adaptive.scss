@@ -1,0 +1,38 @@
+@media screen and (max-width: 758px) {
+    .about-me__bolded-info {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me__bolded-info {
+        order: -1;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .technologies-list {
+        max-height: 173px;
+    }
+}
+
+@media screen and (max-width: 544px) {
+    .technologies-list {
+        max-height: unset;
+    }
+}
+
+@media screen and (max-width: 626px) {
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-block {
+        margin: 25px;
+    }
+}
