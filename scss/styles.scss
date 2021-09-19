@@ -1,5 +1,323 @@
+@use "sass:math";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,300;1,400;1,700;1,800&display=swap');
 @import 'variables';
 
-body {
-    font-weight: $fw-light;
+// === Common ===
+html {
+    scroll-behavior: smooth;
 }
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: $fw-regular;
+    font-size: $fs-s;
+    background-color: #ddd;
+
+    @extend %regular-font;
+}
+
+.header {
+    color: $header-color;
+    font-weight: $fw-regular;
+
+    &--second {
+        margin-top: $fs-xl * 2;
+        color: $header-color;
+        font-weight: $fw-bold;
+        font-size: $fs-l;
+    }
+
+    &--third {
+        margin-top: $fs-xl * 2;
+        color: $main-color;
+        font-weight: $fw-bold;
+        font-size: $fs-m;
+    }
+
+    &--fourth {
+        margin-top: $fs-xl * 2;
+        color: $subheader-color;
+        font-weight: $fw-bold;
+        font-size: $fs-m;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.list {
+    padding-left: math.div($fs-xl, 2);
+
+    &__item {
+        list-style: none;
+
+        &::before {
+            display: inline-block;
+            width: math.div($fs-xl, 2);
+            margin-left: -1 * math.div($fs-xl, 2);
+            color: $second-header-color;
+            font-weight: $fw-bold;
+            content: "\2022";
+        }
+    }
+
+    &__link {
+        color: $main-color;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.bulleted-p {
+    padding-left: math.div($fs-xl, 2);
+
+    &::before {
+        display: inline-block;
+        width: math.div($fs-xl, 2);
+        margin-left: -1 * math.div($fs-xl, 2);
+        color: $second-header-color;
+        font-weight: $fw-bold;
+        content: "\2022";
+    }
+}
+// === / Common ===
+
+// === Navigation ===
+.colored-container {
+    background-color: $header-color;
+
+    .header {
+        color: $secondary-color;
+    }
+}
+
+.colored-container-wrapper {
+    @extend %paddings;
+
+    width: 100%;
+    color: $secondary-color;
+    background-color: $header-color;
+
+    .header--second {
+        margin-top: 0;
+    }
+}
+
+.clear-container {
+    @extend %paddings;
+
+    .header--second {
+        margin-top: 0;
+    }
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+
+    &__item {
+        list-style: none;
+    }
+
+    &__link {
+        color: $secondary-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.main-menu-wrapper {
+    padding: 0;
+}
+// === / Navigation ===
+
+// === About me ===
+.about-me {
+    display: flex;
+    flex-direction: row;
+    padding: $big-padding 0;
+    color: $main-color;
+
+    &__photo {
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    &__content {
+        padding: $main-padding;
+        padding-top: 0;
+    }
+
+    &__bolded-info {
+        flex-basis: 70%;
+        padding: $main-padding;
+        background-color: $header-color;
+    }
+
+    &__main-header {
+        color: $secondary-color;
+        font-size: $fs-xl;
+
+        &--surname {
+            font-weight: $fw-extra-bold;
+        }
+    }
+
+    &__header {
+        margin-top: 0;
+    }
+
+    &__sub-header {
+        color: $secondary-color;
+        font-weight: $fw-light;
+        font-size: $fs-m;
+    }
+
+    &__contacts-list {
+        padding: 0;
+        color: $second-header-color;
+    }
+
+    &__contacts-item {
+        list-style: none;
+
+        .dt {
+            font-weight: $fw-bold;
+        }
+
+        .dd {
+            padding-left: 15%;
+        }
+    }
+
+    &__contacts-link {
+        color: $secondary-color;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &__contacts {
+        color: $secondary-color;
+    }
+}
+
+.experience-milestone {
+    display: flex;
+    justify-content: space-between;
+    color: $subheader-color;
+    font-size: $fs-m;
+
+    &__date {
+        font-style: italic;
+    }
+}
+// === / About me ===
+
+// === Code example ===
+.code-container {
+    @extend %paddings;
+
+    .header--second {
+        margin-top: 0;
+    }
+}
+
+.code {
+    white-space: pre-wrap;
+    word-break: break-all;
+
+    &__block {
+        border-radius: $fs-m;
+    }
+}
+// === / Code example ===
+
+// === Technologies ===
+.technologies-container {
+    .header--second {
+        margin-top: 0;
+    }
+}
+
+.technologies-container-wrapper {
+    @extend %paddings;
+}
+
+.technologies-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    max-height: 120px;
+}
+// === / Technologies ===
+
+// === Projects ===
+.projects-container {
+    position: relative;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $header-color;
+        content: "";
+    }
+}
+
+.project {
+    &__image {
+        width: 100%;
+    }
+}
+// === / Projects ===
+
+// === Footer ===
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    color: #000;
+    text-align: center;
+    background-color: $secondary-color;
+    border-radius: 50%;
+
+    &__link {
+        color: #000;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+// === / Footer ===

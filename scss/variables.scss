@@ -1,1 +1,42 @@
+// === Font families ===
+%regular-font {
+    font-family: 'Open Sans', sans-serif;
+}
+// === / Font families ===
+
+// === Font weights ===
 $fw-light: 300;
+$fw-regular: 400;
+$fw-bold: 700;
+$fw-extra-bold: 800;
+
+// === / Font weights ===
+
+// === Font sizes ===
+$fs-xxxl: 80px;
+$fs-xl: 32px;
+$fs-l: 28px;
+$fs-m: 22px;
+$fs-s: 18px;
+
+// === / Font sizes ===
+
+// === Colors ===
+$main-color: #4f4f4f;
+$secondary-color: #fff;
+$header-color: #174180;
+$second-header-color: #56ccf2;
+$subheader-color: #828282;
+
+// === / Colors ===
+
+// === Sizes ===
+$main-padding: 25px;
+$big-padding: $fs-xxxl;
+// === / Sizes ===
+
+// === Paddings in containers ===
+%paddings {
+    padding: $big-padding $main-padding;
+}
+// === / Paddings in containers ===

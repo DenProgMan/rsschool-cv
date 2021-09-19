@@ -5,7 +5,7 @@ module.exports = {
     rules: {
         "indentation": 4,
         "at-rule-no-unknown": [true, {
-            "ignoreAtRules": ["include", "mixin", "extend"],
+            "ignoreAtRules": ["include", "mixin", "extend", "use"],
         }],
         "number-leading-zero": ["never"],
     }
