@@ -6,6 +6,8 @@ Denis Garkin
 **E-mail**: rkden58@gmail.com\
 **Telegram**: [@DenProgMan](https://t.me/DenProgMan)
 
+[<img src="images/photo.jpg" width="250">](images/photo.jpg "It's me")
+
 ---
 ## About me:
 Hi there, I’m Denis and I’m from Penza, it’s 650km from Moscow. Pavel Volya from Penza you know.
