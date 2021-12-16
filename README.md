@@ -1,1 +1,1 @@
-https://DenProgMan.github.io/rsschool-cv/
+https://DenProgMan.github.io/rsschool-cv/cv
