@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap');
+
+/* === Common === */
+
+:root {
+    --main-color: #174180;
+    --second-color: #56ccf2;
+    --main-size: 55px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fbfbfb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+    color: var(--main-color);
+    margin-top: var(--main-size);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.clear-margin-top {
+    margin-top: 0;
+}
+
+/* === / Common === */
+
+
+/* === / Left column === */
+
+.left-column {
+    background-color: #fff;
+    padding: var(--main-size);
+    flex: 2;
+}
+
+.left-column h2,
+.left-column h3,
+.left-column h4,
+.left-column h5,
+.left-column h6 {
+    font-weight: bold;
+}
+
+.left-column a {
+    color: var(--main-color);
+}
+
+.left-column a:visited {
+    color: var(--main-color);
+}
+
+.left-column ul {
+    list-style: none;
+}
+
+.left-column ul li::before {
+    content: "\2022";
+    color: var(--main-color);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* === Left column === */
+
+
+/* === / Right column === */
+
+.right-column {
+    flex-basis: 33%;
+    background-color: var(--main-color);
+    color: white;
+    padding: var(--main-size) 25px;
+}
+
+.right-column h1 {
+    color: white;
+}
+
+.right-column h1,
+.right-column h3 {
+    text-align: center;
+    margin: 0;
+}
+
+.right-column h2 {
+    color: var(--second-color);
+}
+
+.right-column h3 {
+    color: var(--second-color);
+}
+
+.right-column img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    margin-bottom: var(--main-size);
+}
+
+.right-column a {
+    color: white;
+}
+
+.right-column a:visited {
+    color: white;
+}
+
+/* === Right column === */
+
+/* === header === */
+header ul {
+    list-style: none;
+    padding: 0;
+}
+header .dt {
+    font-weight: bold;
+}
+header ul p {
+    margin: 0;
+}
+header ul .dd {
+    padding-left: 40px;
+}
+/* === / header === */
+
+/* === Footer === */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid gray;
+    padding-top: var(--main-size);
+    margin-top: 55px;
+}
+
+.year {
+    text-align: center;
+}
+
+footer a {
+    display: block;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+}
+/* === / Footer === */
