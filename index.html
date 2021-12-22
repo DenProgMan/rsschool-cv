@@ -121,10 +121,22 @@
 
         <section class="english-level colored-container">
             <div class="english-wrapper colored-container-wrapper container">
-                <h2 class="header header--second">My English level</h2>
-                <p>
-                    My English level is A2 and I continue to study. Last year I had exercises with a teacher.
-                </p>
+                <div class="english-level__descr">
+                    <h2 class="header header--second">My English level</h2>
+                    <p>
+                        My English level is B1 and I continue to study. Last year I had exercises with a teacher.
+                    </p>
+                </div>
+                <div class="english-level__proof">
+                    <figure>
+                        <a class="english-level__proof-link" href="#popup">
+                            <img class="english-level__proof-img" src="assets/img/my-english-level.jpg" alt="My English level" width="303" height="354">
+                        </a>
+                        <figcaption>My English level is Intermediate</figcaption>
+                    </figure>
+
+                    <span class="english-level__note">[Picture is clickable! Click it!]</span>
+                </div>
             </div>
         </section>
 
@@ -230,6 +242,15 @@ console.log(removeProperty('password')(user));
             </div>
         </div>
     </footer>
+
+    <div class="popup__anchor" id="popup-anchor"></div>
+
+    <div class="popup" id="popup">
+        <a href="#popup-anchor" class="popup__area"></a>
+        <div class="popup__body">
+            <img src="assets/img/english-level-popup.jpg" alt="My English level Proof" width="700" height="629">
+        </div>
+    </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script src="console.js"></script>
