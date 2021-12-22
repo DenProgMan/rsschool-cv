@@ -1,0 +1,102 @@
+// === Burger menu ===
+.menu-toggle__checkbox {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 615px) {
+
+    .header-container {
+        height: 50px;
+    }
+
+    .burger {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        background: $secondary-color;
+        border-radius: 3px;
+        transform-origin: 4px 0;
+        transition:
+            transform .5s cubic-bezier(.77, .2, .05, 1),
+            background .5s cubic-bezier(.77, .2, .05, 1),
+            opacity .55s ease;
+
+        &:first-child {
+            transform-origin: 0% 0%;
+        }
+
+        &:nth-last-child(2) {
+            transform-origin: 0% 100%;
+        }
+    }
+
+    .menu-toggle {
+        position: relative;
+        top: 15px;
+        left: 50px;
+        z-index: 1;
+        display: block;
+        width: 33px;
+        -webkit-user-select: none;
+        user-select: none;
+
+        &__checkbox {
+            position: absolute;
+            top: -7px;
+            left: -5px;
+            z-index: 2;
+            display: block;
+            width: 40px;
+            height: 32px;
+            cursor: pointer;
+            opacity: 0;
+            -webkit-touch-callout: none;
+
+            &:checked ~ .burger {
+                background: #232323;
+                transform: rotate(45deg) translate(-2px, -1px);
+                opacity: 1;
+            }
+
+            &:checked ~ span:nth-last-child(3) {
+                transform: rotate(0deg) scale(.2, .2);
+                opacity: 0;
+            }
+
+            &:checked ~ span:nth-last-child(2) {
+                transform: rotate(-45deg) translate(0, -1px);
+            }
+        }
+    }
+
+    .main-menu {
+        position: absolute;
+        flex-direction: column;
+        width: 300px;
+        margin: -100px 0 0 -50px;
+        padding: 50px;
+        padding-top: 125px;
+        list-style-type: none;
+        background: #ededed;
+        -webkit-font-smoothing: antialiased;
+        transform: translate(-100%, 0);
+        transform-origin: 0% 0%;
+        transition: transform .5s cubic-bezier(.77, .2, .05, 1);
+
+        &__link {
+            color: $header-color;
+        }
+    }
+
+    .menu-toggle__checkbox:checked ~ ul {
+        transform: none;
+    }
+    // === / Burger menu ===
+}
