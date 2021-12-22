@@ -232,6 +232,30 @@ body {
 }
 // === / About me ===
 
+// === English level Section ===
+.english-wrapper {
+    flex-direction: row;
+}
+
+.english-level {
+    &__proof {
+        text-align: center;
+    }
+
+    &__proof-img {
+        transition: .2s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__note {
+        color: #ff9d9d;
+    }
+}
+// === / English level Section ===
+
 // === Code example ===
 .code-container {
     @extend %paddings;
@@ -321,6 +345,59 @@ body {
     }
 }
 // === / Footer ===
+
+// === Popup ===
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000000a8;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .8s;
+
+    &__body {
+        display: flex;
+        min-height: 100%;
+        align-items: center;
+        justify-content: center;
+        transition: all .8s;
+        opacity: 0;
+        visibility: hidden;
+        transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+    }
+
+    &:target {
+        opacity: 1;
+        visibility: visible;
+
+        .popup__body {
+            transform: perspective(600px) translate(0, 0) rotateX(0deg);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    &__anchor {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    &__area {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+
+}
+// === / Popup ===
 
 @import 'adaptive';
 @import 'burger';
