@@ -1,2 +1,2 @@
-https://DenProgMan.github.io/rsschool-cv/cv
-https://DenProgMan.github.io/rsschool-cv/
+[CV version](https://DenProgMan.github.io/rsschool-cv/cv)
+[HTML version](https://DenProgMan.github.io/rsschool-cv/)
